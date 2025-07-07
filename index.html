@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance System</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Attendance Management System</h1>
+    <form method="POST" action="/submit">
+        <label>Name:</label>
+        <input type="text" name="name" required><br>
+
+        <label>Roll No:</label>
+        <input type="text" name="roll_no" required><br>
+
+        <label>Status:</label>
+        <select name="status">
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+        </select><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
